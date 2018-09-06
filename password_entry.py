@@ -2,8 +2,11 @@
 
 MINIMUM_LENGTH = 6
 
-password = input("Enter a password with at least {} characters ".format(MINIMUM_LENGTH))
-while len(password) < MINIMUM_LENGTH:
+def main():
     password = input("Enter a password with at least {} characters ".format(MINIMUM_LENGTH))
+    while len(password) < MINIMUM_LENGTH:
+        password = input("Enter a password with at least {} characters ".format(MINIMUM_LENGTH))
 
-print('*' * len(password))
+    print('*' * len(password))
+
+main()
